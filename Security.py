@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 matchl = 0
 matchr = 0
-tsvfile = open('training_granted.tsv','r')
+tsvfile = open('training_show.tsv','r')
 tsvreader = csv.reader(tsvfile,delimiter = '\t')
 
 lx,ly,rx,ry = [],[],[],[]
@@ -23,7 +23,7 @@ for line in tsvreader:
 		rx.append(line[4])
 		ry.append(line[5])
 
-tsvfile = open('test_granted.tsv','r')
+tsvfile = open('test_show.tsv','r')
 tsvreader = csv.reader(tsvfile,delimiter = '\t')
 
 lax,lay,rax,ray = [],[],[],[]
